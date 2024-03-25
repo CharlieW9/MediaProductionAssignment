@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 738d77e1abd0c1c428ffd181ecb462fe
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - unEarthlyRed: {fileID: 2100000, guid: 5d133deeaa66ed445853e946ff25e073, type: 2}
+  - defaultSkyboxMaterial: {fileID: 2100000, guid: 85cf0b004bc4a654b9e501efcce47902, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
