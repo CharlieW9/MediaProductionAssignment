@@ -9,14 +9,19 @@ public class ConversationStarter : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")) // Check if conversation is not already active
         {
-        if(Input.GetKeyDown(KeyCode.F))
-        {
-            ConversationManager.Instance.StartConversation(myConversation);
-            Cursor.lockState = CursorLockMode.None;
-         }
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                ConversationManager.Instance.StartConversation(myConversation);
+                Cursor.lockState = CursorLockMode.None;
 
+            }
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
